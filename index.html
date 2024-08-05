@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <header>
+            <h1>Quiz</h1>
+        </header>
+        <hr>
+        <div class="child">
+            <div class="h2">
+                <h2 id="que">Q. Which is the world's smallest country?</h2>
+            </div>
+            <section class="optionbox">
+                <button class="options" id="op1" onclick="check(1)">Italy</button>
+                <button class="options" id="op2" onclick="check(2)">Vatican City</button>
+                <button class="options" id="op3" onclick="check(3)">Nauru</button>
+                <button class="options" id="op4" onclick="check(4)">Bhutan</button>
+            </section>
+            <footer>
+                <p><b id="qnum">1</b> of <b>5</b> Questions</p>
+                <button class="next" id="next" onclick="nextq()">Next</button>
+            </footer>
+        </div>
+    </div>
+    <div class="scorebox wh" id="scorebox">
+        <header>
+            <h1>Quiz</h1>
+        </header>
+        <hr>
+        <section>
+            <h2>Your Score is <span id="yscore">5</span> out of 5</h2>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
